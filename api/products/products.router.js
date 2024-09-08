@@ -9,10 +9,11 @@ router.get("/products", async (req, res) => {
     const respuesta = await productManager.getProducts()
     if(respuesta.status === "success"){
         if (Object.keys(consultas).length !== 0) {            
-            let elementosMostrar =  respuesta.payload.slice(0, consultas.limit)
-            res.status(200).json(elementosMostrar)
+            let elementosMostrar =  respuesta.payload.slice(0, consultas.limit)            
+            res.render("home", { data: elementosMostrar} )
         } else {
-            res.status(200).json(respuesta.payload)
+            console.log(respuesta.payload)
+            res.render("home", { data: respuesta.payload})
         }
     } else {
         res.status(404).json(respuesta.payload)
