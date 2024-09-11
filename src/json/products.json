@@ -11,7 +11,7 @@
     "thumbnails": []
   },
   {
-    "id": 3,
+    "id": 5,
     "status": true,
     "title": "Producto 5",
     "description": "Descripción 5",
@@ -19,6 +19,28 @@
     "price": 500,
     "stock": 5000,
     "category": "Categoría 5",
+    "thumbnails": []
+  },
+  {
+    "id": 6,
+    "status": true,
+    "title": "Producto 4",
+    "description": "Descripción 4",
+    "code": 104,
+    "price": 400,
+    "stock": 4000,
+    "category": "Categoría 4",
+    "thumbnails": []
+  },
+  {
+    "id": 7,
+    "status": true,
+    "title": "Producto 6",
+    "description": "Descripción 6",
+    "code": 106,
+    "price": 600,
+    "stock": 6000,
+    "category": "Categoría 6",
     "thumbnails": []
   }
 ]

@@ -11,6 +11,7 @@ socket.on('update-products', (product) => {
         <p><strong>Stock:</strong> ${product.stock}</p>
         <p><strong>Categoría:</strong> ${product.category}</p>
         <button onclick="deleteProduct(${product.id})">Eliminar</button>
+        <hr>
     `
     document.getElementById('listadoProductos').appendChild(productDiv)
 })
